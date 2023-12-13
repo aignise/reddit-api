@@ -6,7 +6,7 @@ from . import config
 reddit = config.reddit
 
 ## Function to find subreddits
-def find_subreddits(keywords: List[str]) -> List[str]:
+def find_subreddits(keywords): #def find_subreddits(keywords: List[str]) -> List[str]:
     subreddits = []
     for keyword in keywords:
         results = reddit.subreddit("all").search(keyword, limit=3)
@@ -15,7 +15,7 @@ def find_subreddits(keywords: List[str]) -> List[str]:
     return subreddits
 
 # Function to find posts
-def find_posts(subreddits: List[str], keywords: List[str]) -> dict:
+def find_posts(subreddits, keywords): #def find_posts(subreddits: List[str], keywords: List[str]) -> dict:
     posts = {}
     for subreddit in subreddits:
         for keyword in keywords:
