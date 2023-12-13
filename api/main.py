@@ -4,6 +4,8 @@ from typing import List
 import extract
 import actions
 
+app = FastAPI()
+
 ## FastAPI test
 @app.get("/")
 def home():
