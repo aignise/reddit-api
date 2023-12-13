@@ -1,8 +1,8 @@
 from fastapi import FastAPI, HTTPException
 from typing import List
 
-import extract
-import actions
+from . import extract
+from . import actions
 
 app = FastAPI()
 
