@@ -1,5 +1,5 @@
 fastapi==0.75.0
 uvicorn==0.17.6
-praw==7.5.0
+praw==7.7.1
 python-dotenv==0.20.0
 typing
