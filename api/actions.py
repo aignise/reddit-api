@@ -1,7 +1,7 @@
 import praw
 from typing import List
 
-from . import config
+import config
 
 reddit = config.reddit
 

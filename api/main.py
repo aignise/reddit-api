@@ -1,8 +1,8 @@
 from fastapi import FastAPI, HTTPException
 from typing import List
 
-from . import extract
-from . import actions
+import extract
+import actions
 
 ## FastAPI test
 @app.get("/")
